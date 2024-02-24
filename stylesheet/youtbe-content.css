@@ -1,0 +1,112 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  padding-top: 85px;
+  padding-left: 96px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  background-color: #fafafa;
+  font-family: Arial,Roboto; 
+}
+
+p{
+  padding: 0;
+  margin: 0;
+}
+
+@media(max-width: 750px){
+  .youtube-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(min-width: 751px) and (max-width: 999px){
+  .youtube-grid{
+    grid-template-columns: 1fr 1fr 1fr; 
+  }
+}
+
+@media(min-width: 1000px){
+  .youtube-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.youtube-grid{
+  display: grid;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+
+@media(min-width:1000px){
+  .content-title{
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media(min-width:1000px){
+  .channel-name,
+  .views{
+    font-size: 24px;
+  }
+}
+
+.thumbnail-picture{
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.picture{
+  width: 100%;
+}
+
+.video-time{
+  background-color: rgb(12, 12, 12);
+  color: white;
+  position: absolute;
+  right: 8px;
+  bottom: 10px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.channel-profile{
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+  cursor: pointer;
+}
+
+.yourtube-content{
+  width: 100%;
+}
+
+.picture-profile{
+  margin-right: 15px;
+}
+
+.content-column{
+  display: flex;
+  flex-direction: row;
+}
+
+.content-title{
+  font-weight: bold;
+  line-height: 23px;
+  padding-bottom: 8px;
+}
+
+.channel-name{
+  font-size: 15px;
+  color: rgb(49, 49, 49);
+  padding-bottom: 4px;
+}
+
+.views{
+  font-size: 15px;
+  color: rgb(49, 49, 49);
+}
+

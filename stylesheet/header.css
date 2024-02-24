@@ -1,0 +1,257 @@
+.header{
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  border-bottom-width: 1px  solid  white;
+  z-index: 100;
+}
+
+.header-info-left{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-shrink: 0;  
+}
+
+.hamburger-menu{
+  height: 24px;
+  width: 24px;
+  margin-left: 18px;
+  margin-right: 24px;
+  cursor: pointer;
+   padding:8px;
+
+}
+.hamburger-menu:hover{
+  background-color: rgb(245, 245, 245);
+  border-radius: 25px;
+}
+
+.hamburger-menu:active{
+  background-color: rgb(223, 223, 223);
+}
+
+.youtube-logo{
+  height: 20px;
+  cursor: pointer;
+}
+
+.youtube-logo-countaine{
+  position: relative;
+}
+
+.youtube-logo-in{
+  position: absolute;
+  right: -15px;
+  top: -5px;
+  font-size: 10px;
+}
+
+.header-info-middle{
+  margin-left: 50px;
+  margin-right: 25px;
+  max-width: 600px;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-box{
+  flex: 1;
+  display: flex;
+  height: 36px;
+  padding-left: 15px;
+  font-size: 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: inset 1px 2px 3px rgb(245, 244, 244);
+  width: 0;
+}
+
+.search-box::placeholder{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.sratch-box:active{
+  border: 1px solid lightseagreen;
+  width: 500px;
+
+}
+
+.search-button{
+  height: 40px;
+  width: 66px;
+  background-color: rgb(248, 244, 244);
+  font-size: 16px;
+  border: 1px solid rgb(192, 192, 192);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-left: -1px;
+  margin-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.search-button,
+.voice-search-button,
+.upload-icon-container,
+.youtube-app-icon-container,
+.notification-icon-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip,
+.youtube-app-icon-container .tooltip,
+.notification-icon-container .tooltip{
+  position: absolute;
+  bottom: -40px;
+  background-color: rgb(80, 78, 78);
+  color: white;
+  padding: 7px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.15;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.youtube-app-icon-container:hover .tooltip,
+.notification-icon-container:hover .tooltip{
+  opacity: 1;
+}
+
+.search-icon{
+  height: 30px;
+  width: 25px;
+  
+}
+
+.search-button:hover{
+  background-color: rgb(223, 223, 223);  
+}
+
+.search-button:active{
+  background-color: rgb(207, 206, 206);
+}
+
+.voice-search-button{
+  border-radius: 22px;
+  width: 42px;
+  height: 40px;
+  border: none;
+  background-color: rgb(247, 246, 246);
+  cursor: pointer;
+  position: relative;
+}
+
+.voice-icon{
+  height: 25px;
+}
+
+.voice-search-button:hover{
+  background-color: rgb(223, 223, 223);
+}
+
+.voice-search-button:active{
+  background-color: rgb(207, 206, 206);
+}
+
+.header-info-right{
+   width: 200px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   margin-right: 23px;
+   flex-shrink: 0;
+}
+
+.notification-icon-container{
+  padding:8px 10px;
+}
+
+.upload-icon{
+  height: 25px;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.upload-icon:hover{
+  background-color: rgb(245, 245, 245);
+  border-radius: 25px;
+}
+
+.upload-icon:active{
+  background-color: rgb(223, 223, 223);
+}
+
+.youtube-app-icon{
+  height: 25px;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.youtube-app-icon:hover{
+  background-color: rgb(245, 245, 245);
+  border-radius: 25px;
+}
+
+.youtube-app-icon:active{
+  background-color: rgb(223, 223, 223);
+}
+
+.notification-icon-container:hover{
+  background-color: rgb(245, 245, 245);
+  border-radius: 25px;
+}
+
+.notification-icon-container:active{
+  background-color: rgb(223, 223, 223);
+}
+
+.notification-count{
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  background-color: rgb(179, 3, 3);
+  color: white;
+  font-size: 11px;
+  padding: 2px 5px;
+  border-radius: 10px;
+}
+
+.notification-icon{
+  height: 25px;
+  cursor: pointer;
+}
+
+.my-channel-image{
+  height: 35px;
+  border-radius: 17px;
+  cursor: pointer;
+}
